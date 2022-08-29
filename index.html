@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta http-equiv="content-type" content="text/html; charset= utf-8">
+        <script type="text/javascript" charset="utf-8" src="calc.js"></script>
+    </head>
+    <body>
+        <h1>Calculadora</h1>
+        <form name="calc">
+            <div id="div-visor">
+                <input id="visor" type="text" name="visor" readonly></input><br>
+            </div>
+            <table>
+                <input class="clear-button" type="button" name="C" value="C" onclick="onClear(value)"></input>
+                <input class="clear-button" type="button" name="Del" value="Del" onclick="onClear(value)"></input>
+                <br>
+                <input class="number-button" type="button" name="7" value="7" onclick="onClick(value)"></input>
+                <input class="number-button" type="button" name="8" value="8" onclick="onClick(value)"></input>
+                <input class="number-button" type="button" name="9" value="9" onclick="onClick(value)"></input>
+                <input class="number-button" type="button" name="+" value="+" onclick="operator(value)"></input>
+                <br>
+                <input class="number-button" type="button" name="4" value="4" onclick="onClick(value)"></input>
+                <input class="number-button" type="button" name="5" value="5" onclick="onClick(value)"></input>
+                <input class="number-button" type="button" name="6" value="6" onclick="onClick(value)"></input>
+                <input class="number-button" type="button" name="-" value="-" onclick="operator(value)"></input>
+                <br>
+                <input class="number-button" type="button" name="1" value="1" onclick="onClick(value)"></input>
+                <input class="number-button" type="button" name="2" value="2" onclick="onClick(value)"></input>
+                <input class="number-button" type="button" name="3" value="3" onclick="onClick(value)"></input>
+                <input class="number-button" type="button" name="*" value="*" onclick="operator(value)"></input>
+                <br>
+                <input class="number-button" type="button" name="0" value="0" onclick="onClick(value)"></input>
+                <input class="number-button" type="button" name="." value="." onclick="dot()"></input>
+                <input class="number-button" type="button" name="/" value="/" onclick="operator(value)"></input>
+                <input class="number-button" type="button" name="=" value="=" onclick="calculate()"></input>
+            </table>
+        </form>  
+    </body>
+</html>
